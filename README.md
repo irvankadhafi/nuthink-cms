@@ -22,6 +22,7 @@ This is an example of how to build a CMS from scratch with Laravel and Vue. You 
 * `npm install`
 * `php artisan key:generate`
 * Buat database dengan nama db_cms
+* ganti nama `.env.example` menjadi `.env`
 * `php artisan migrate`
 * `php artisan db:seed` (Optional)
 * selesai
