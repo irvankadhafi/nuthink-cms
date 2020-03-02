@@ -26,8 +26,10 @@
 
 <body>
 <div id="app">
-    <Homepage :user-id='@json(auth()->user()->id)' :user-name='@json(auth()->user()->name)'>
-    </Homepage>
+    <Homepage
+        :user-name='@json(auth()->user()->name)'
+        :user-id='@json(auth()->user()->id)'
+    ></Homepage>
 </div>
 <script src="/js/app.js"></script>
 </body>
