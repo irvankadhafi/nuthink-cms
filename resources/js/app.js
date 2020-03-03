@@ -3,9 +3,14 @@ require('./bootstrap');
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Homepage from './components/Homepage'
+import Create from './components/Create'
 import Read from './components/Read'
+import Update from './components/Update'
+import CKEditor from '@ckeditor/ckeditor5-vue'
 
-Vue.use(VueRouter)
+Vue.use(CKEditor);
+
+Vue.use(VueRouter);
 
 const router = new VueRouter({
     mode: 'history',
@@ -16,6 +21,18 @@ const router = new VueRouter({
             component: Read,
             props: true
         },
+        {
+            path: '/admin/create',
+            name: 'create',
+            component: Create,
+            props: true
+        },
+        {
+            path: '/admin/update',
+            name: 'update',
+            component: Update,
+            props: true
+        },
     ],
 });
 
@@ -24,3 +41,10 @@ const app = new Vue({
     router,
     components: { Homepage },
 });
+ClassicEditor
+    .create( document.querySelector( '#edit-description' ), {
+        toolbar: [ 'heading', '|', 'bold', 'italic', 'link', '|', 'bulletedList', 'numberedList', '|', 'undo', 'redo' ]
+    } )
+    .then( editor => {
+        theEditEditor = editor; // Save for later use.
+    } );
