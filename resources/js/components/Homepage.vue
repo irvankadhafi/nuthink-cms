@@ -3,8 +3,8 @@
     <div>
         <nav>
             <section>
-                <a style="color: white" href="/admin/dashboard">Laravel-CMS</a>
-                <a style="color: white" href="/">HOME</a>
+                <a style="color: white" href="/board/admin/dashboard">Laravel-CMS</a>
+                <a style="color: white" href="/board/">HOME</a>
                 <hr>
                 <ul>
                     <li>
@@ -18,7 +18,7 @@
         <article>
             <header>
                 <header class="d-inline">Welcome, {{ userName }}</header>
-                <p @click="logout" class="float-right mr-3" style="cursor: pointer">Logout</p>
+                <p @click="logoout" class="float-right mr-3" style="cursor: pointer">Logout</p>
             </header>
             <div>
                 <router-view></router-view>
@@ -98,8 +98,8 @@
         },
         methods: {
             logout() {
-                axios.post("/logout").then(() => {
-                    window.location = "/";
+                axios.post("/board/logout").then(() => {
+                    window.location = "/board/";
                 });
             }
         }

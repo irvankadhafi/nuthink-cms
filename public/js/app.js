@@ -2136,8 +2136,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     logout: function logout() {
-      axios.post("/logout").then(function () {
-        window.location = "/";
+      axios.post("/board/logout").then(function () {
+        window.location = "/board/";
       });
     }
   }
@@ -38473,14 +38473,16 @@ var render = function() {
           "a",
           {
             staticStyle: { color: "white" },
-            attrs: { href: "/admin/dashboard" }
+            attrs: { href: "/board/admin/dashboard" }
           },
           [_vm._v("Laravel-CMS")]
         ),
         _vm._v(" "),
-        _c("a", { staticStyle: { color: "white" }, attrs: { href: "/" } }, [
-          _vm._v("HOME")
-        ]),
+        _c(
+          "a",
+          { staticStyle: { color: "white" }, attrs: { href: "/board/" } },
+          [_vm._v("HOME")]
+        ),
         _vm._v(" "),
         _c("hr"),
         _vm._v(" "),
@@ -38519,7 +38521,7 @@ var render = function() {
           {
             staticClass: "float-right mr-3",
             staticStyle: { cursor: "pointer" },
-            on: { click: _vm.logout }
+            on: { click: _vm.logoout }
           },
           [_vm._v("Logout")]
         )
@@ -53863,17 +53865,17 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
   routes: [{
-    path: '/admin/dashboard',
+    path: '/board/admin/dashboard',
     name: 'read',
     component: _components_Read__WEBPACK_IMPORTED_MODULE_4__["default"],
     props: true
   }, {
-    path: '/admin/create',
+    path: '/board/admin/create',
     name: 'create',
     component: _components_Create__WEBPACK_IMPORTED_MODULE_3__["default"],
     props: true
   }, {
-    path: '/admin/update',
+    path: '/board/admin/update',
     name: 'update',
     component: _components_Update__WEBPACK_IMPORTED_MODULE_5__["default"],
     props: true
@@ -53885,11 +53887,6 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   components: {
     Homepage: _components_Homepage__WEBPACK_IMPORTED_MODULE_2__["default"]
   }
-});
-ClassicEditor.create(document.querySelector('#edit-description'), {
-  toolbar: ['heading', '|', 'bold', 'italic', 'link', '|', 'bulletedList', 'numberedList', '|', 'undo', 'redo']
-}).then(function (editor) {
-  theEditEditor = editor; // Save for later use.
 });
 
 /***/ }),

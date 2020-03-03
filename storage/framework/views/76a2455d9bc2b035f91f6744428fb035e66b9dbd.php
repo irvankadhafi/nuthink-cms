@@ -3,14 +3,13 @@
         <div class="row align-items-center">
             <div class="col-md-8 mx-auto">
                 <h1 class="my-4 text-center">Welcome to the Blog </h1>
-
                 <?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="card mb-4">
                         <img class="card-img-top" src=" <?php echo !empty($post->image) ? '/uploads/posts/' . $post->image :  'http://placehold.it/750x300'; ?> " alt="Card image cap">
                         <div class="card-body">
                             <h2 class="card-title text-center"><?php echo e($post->title); ?></h2>
                             <p class="card-text"> <?php echo e(Str::limit($post->body, $limit = 280, $end = '...')); ?> </p>
-                            <a href="/posts/<?php echo e($post->id); ?>" class="btn btn-primary">Read More &rarr;</a>
+                            <a href="/board/posts/<?php echo e($post->id); ?>" class="btn btn-primary">Read More &rarr;</a>
                         </div>
                         <div class="card-footer text-muted">
                             Posted <?php echo e($post->created_at->diffForHumans()); ?> by

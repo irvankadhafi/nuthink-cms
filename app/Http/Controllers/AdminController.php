@@ -18,7 +18,7 @@ class AdminController extends Controller
         }
 
         if (request()->user()->hasRole('user')) {
-            return redirect('/home');
+            return redirect('/board/home');
         }
     }
 }

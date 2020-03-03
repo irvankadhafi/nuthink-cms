@@ -16,19 +16,19 @@ const router = new VueRouter({
     mode: 'history',
     routes: [
         {
-            path: '/admin/dashboard',
+            path: '/board/admin/dashboard',
             name: 'read',
             component: Read,
             props: true
         },
         {
-            path: '/admin/create',
+            path: '/board/admin/create',
             name: 'create',
             component: Create,
             props: true
         },
         {
-            path: '/admin/update',
+            path: '/board/admin/update',
             name: 'update',
             component: Update,
             props: true
@@ -41,10 +41,3 @@ const app = new Vue({
     router,
     components: { Homepage },
 });
-ClassicEditor
-    .create( document.querySelector( '#edit-description' ), {
-        toolbar: [ 'heading', '|', 'bold', 'italic', 'link', '|', 'bulletedList', 'numberedList', '|', 'undo', 'redo' ]
-    } )
-    .then( editor => {
-        theEditEditor = editor; // Save for later use.
-    } );
