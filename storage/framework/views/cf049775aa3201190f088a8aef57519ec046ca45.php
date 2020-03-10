@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Neo Ighodaro">
-    <title>Nuthink</title>
+    <title>LaravelCMS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <style>
         body {
@@ -22,13 +22,13 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/board/">Nuthink</a>
+        <a class="navbar-brand" href="/">Nuthink</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <?php if(Route::has('login')): ?>
                     <?php if(auth()->guard()->check()): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo e(url('/board/home')); ?>">Home</a>
+                            <a class="nav-link" href="<?php echo e(url('/home')); ?>">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo e(route('logout')); ?>"

@@ -36,7 +36,6 @@ class User extends Authenticatable
         if ( ! $this->hasAnyRole($roles)) {
             auth()->logout();
             abort(404);
-//            return redirect(url('/board'));
         }
     }
 

@@ -41,3 +41,10 @@ const app = new Vue({
     router,
     components: { Homepage },
 });
+ClassicEditor
+    .create( document.querySelector( '#edit-description' ), {
+        toolbar: [ 'heading', '|', 'bold', 'italic', 'link', '|', 'bulletedList', 'numberedList', '|', 'undo', 'redo' ]
+    } )
+    .then( editor => {
+        theEditEditor = editor; // Save for later use.
+    } );

@@ -15,6 +15,7 @@ class AdminController extends Controller
     {
         if (request()->user()->hasRole('admin')) {
             return view('admin.dashboard');
+
         }
 
         if (request()->user()->hasRole('user')) {
