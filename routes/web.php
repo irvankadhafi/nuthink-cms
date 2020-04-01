@@ -13,6 +13,10 @@
 Route::get('/',function (){
     return view('index');
 });
+
+Route::get('news',function (){
+    return view('layoutNews');
+});
 Auth::routes();
 Route::get('/board/posts/{post}', 'PostController@single');
 Route::get('/board/home', 'HomeController@index')->name('home');

@@ -49,52 +49,23 @@
             <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="index.html">BOARD</a></li>
                     <!-- Dropdown -->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <li>
+                        <a href="#" >
                             DEPARTEMENT
                         </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="elements.html">ADMINISTRASI DAN KESEKERTARIATAN</a>
-                            <a class="dropdown-item" href="elements.html">ADVOKASI DAN HAK MAHASISWA</a>
-                            <a class="dropdown-item" href="elements.html">DALAM KAMPUS</a>
-                            <a class="dropdown-item" href="elements.html">HUBUNGAN LUAR KAMPUS</a>
-                            <a class="dropdown-item" href="elements.html">KEUANGAN DAN KEWIRAUSAHAAN</a>
-                            <a class="dropdown-item" href="elements.html">KOMUNIKASI DAN INFORMASI</a>
-                            <a class="dropdown-item" href="elements.html">PENGEMBANGAN SUMBER DAYA MAHASISWA</a>
-                            <a class="dropdown-item" href="elements.html">SOSIAL MASYARAKAT</a>
-                            <a class="dropdown-item" href="elements.html">SOSIAL POLITIK</a>
-
-                        </div>
                     </li>
                     <!-- Dropdown -->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <li>
+                        <a href="#">
                             ORMAWA
                         </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="elements.html">ASSALAM</a>
-                            <a class="dropdown-item" href="elements.html">BADMINTON</a>
-                            <a class="dropdown-item" href="elements.html">BASKET</a>
-                            <a class="dropdown-item" href="elements.html">BELA DIRI</a>
-                            <a class="dropdown-item" href="elements.html">CATUR</a>
-                            <a class="dropdown-item" href="elements.html">ELTRAST</a>
-                            <a class="dropdown-item" href="elements.html">FELLAS</a>
-                            <a class="dropdown-item" href="elements.html">FLAG FOOTBALL</a>
-                            <a class="dropdown-item" href="elements.html">BASKET</a>
-                        </div>
                     </li>
                     <!-- Dropdown -->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                            NEWS POLBAN
+                    <li>
+                        <a href="#">
+                            POLBAN NEWS
                         </a>
-                        <div class="dropdown-menu">
-
-                            <a class="dropdown-item" href="course-details.html">BEASISWA</a>
-                            <a class="dropdown-item" href="elements.html">EVENTS</a>
-                        </div>
                     </li>
                     <li>
                         <a href="contacts.html">ADVO CARE</a>
@@ -328,6 +299,7 @@
 <script src="js/waypoints.min.js"></script>
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 
 </html>
